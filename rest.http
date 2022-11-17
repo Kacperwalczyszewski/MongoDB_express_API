@@ -14,7 +14,7 @@ Content-Type: application/json
 ###get product by id
 GET  http://localhost:3000/products/63736bbecb612e939fcdd23b
 ###ipdate product by id
-PATCH  http://localhost:3000/products/63736bbecb612e939fcdd23b
+PATCH  http://localhost:3000/products/63736bbecb612e939fcdd23
 Content-Type: application/json
 
 {

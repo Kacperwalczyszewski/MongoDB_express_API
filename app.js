@@ -60,7 +60,6 @@ app.use((err, req, res, next) => {
     })
 })
 
-console.log(swaggerDocs)
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
     console.log("sterter on port " + PORT + "....");

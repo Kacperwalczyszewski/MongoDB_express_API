@@ -34,9 +34,48 @@ router.get('/', ProductController.getAllProducts);
  *         description: Created
  */
 router.post('/', ProductController.createNewProduct);
-
+/**
+ * @swagger
+ * /products/{id}:
+ *   get:
+ *     parameters:
+ *      - in: path
+ *        name: id
+ *        required: true
+ *        type: string
+ *        description: Product Id.
+ *     description: Get a product by id
+ *     responses:
+ *       200:
+ *         description: Returns the requested product
+ *       400:
+ *         description: Not found
+ */
 router.get('/:id', ProductController.findProductById);
-
+/**
+ * @swagger
+ * /products/{id}:
+ *   patch:
+ *     parameters:
+ *      - in: path
+ *        name: id
+ *        required: true
+ *        type: string
+ *        description: Update product ID.
+ *      - in: body
+ *        name: product
+ *        description: Update product element
+ *        schema:
+ *          type: object
+ *          properties:
+ *            name:
+ *              type: string
+ *            price:
+ *              type: number
+ *     responses:
+ *       201:
+ *         description: Created
+ */
 router.patch('/:id', ProductController.updateProduct);
 
 router.delete('/:id', ProductController.deleteProduct);
