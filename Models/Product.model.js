@@ -10,6 +10,10 @@ const ProductSchema = new Schema({
     price: {
         type: Number,
         required: true
+    },
+    date: {
+        type: Date,
+        default: Date.now(),
     }
 })
 const Product = mongoose.model('product', ProductSchema)
