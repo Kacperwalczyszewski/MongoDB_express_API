@@ -84,7 +84,7 @@ router.get('/:id', ProductController.findProductById);
  *              type: number
  *     responses:
  *       201:
- *         description: Created
+ *         description: Product updated
  */
 router.patch('/:id', ProductController.updateProduct);
 /**
@@ -98,12 +98,9 @@ router.patch('/:id', ProductController.updateProduct);
  *        type: string
  *        description: The product ID.
  *     description: Delete a product by id
+ *     responses:
  *       200:
- *         description: Returns the requested product
- *       400:
- *         description: Invalid product id
- *       404:
- *         description: Item not found
+ *         description: Product deleted
  */
 router.delete('/:id', ProductController.deleteProduct);
 
