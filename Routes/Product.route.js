@@ -27,8 +27,13 @@ router.get('/', ProductController.getAllProducts);
  *          properties:
  *            name:
  *              type: string
+ *            caterogy:
+ *              type: string
  *            price:
  *              type: number
+ *            date:
+ *              type:date
+ *            
  *     responses:
  *       201:
  *         description: Created
@@ -70,8 +75,12 @@ router.get('/:id', ProductController.findProductById);
  *          properties:
  *            name:
  *              type: string
+ *            caterogy:
+ *              type: string
  *            price:
  *              type: number
+ *            date:
+ *              type:date
  *     responses:
  *       201:
  *         description: Created
