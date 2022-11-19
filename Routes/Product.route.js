@@ -53,7 +53,9 @@ router.post('/', ProductController.createNewProduct);
  *       200:
  *         description: Returns the requested product
  *       400:
- *         description: Not found
+ *         description: Invalid product id
+ *       404:
+ *         description: Item not found
  */
 router.get('/:id', ProductController.findProductById);
 /**
@@ -74,12 +76,12 @@ router.get('/:id', ProductController.findProductById);
  *          properties:
  *            name:
  *              type: string
- *            caterogy:
+ *            category:
+ *              type: string
+ *            author:
  *              type: string
  *            price:
  *              type: number
- *            date:
- *              type:date
  *     responses:
  *       201:
  *         description: Created
@@ -96,9 +98,12 @@ router.patch('/:id', ProductController.updateProduct);
  *        type: string
  *        description: The product ID.
  *     description: Delete a product by id
- *     responses:
  *       200:
- *         description: Returns the requested catachphrase
+ *         description: Returns the requested product
+ *       400:
+ *         description: Invalid product id
+ *       404:
+ *         description: Item not found
  */
 router.delete('/:id', ProductController.deleteProduct);
 
