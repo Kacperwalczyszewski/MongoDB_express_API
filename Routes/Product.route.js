@@ -27,7 +27,9 @@ router.get('/', ProductController.getAllProducts);
  *          properties:
  *            name:
  *              type: string
- *            caterogy:
+ *            category:
+ *              type: string
+ *            author:
  *              type: string
  *            price:
  *              type: number
