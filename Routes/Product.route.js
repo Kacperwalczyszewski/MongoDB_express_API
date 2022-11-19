@@ -77,7 +77,21 @@ router.get('/:id', ProductController.findProductById);
  *         description: Created
  */
 router.patch('/:id', ProductController.updateProduct);
-
+/**
+ * @swagger
+ * /products/{id}:
+ *   delete:
+ *     parameters:
+ *      - in: path
+ *        name: id
+ *        required: true
+ *        type: string
+ *        description: The product ID.
+ *     description: Delete a product by id
+ *     responses:
+ *       200:
+ *         description: Returns the requested catachphrase
+ */
 router.delete('/:id', ProductController.deleteProduct);
 
 module.exports = router;

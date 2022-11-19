@@ -28,8 +28,8 @@ app.all('/test', (req, res) => {
 const swaggerOptions = {
     swaggerDefinition: {
         info: {
-            title: 'Moje zjebane API',
-            description: 'Lubie małpki -> te procentowe'
+            title: 'Library',
+            description: 'My books Api'
         }
     },
     apis: [
