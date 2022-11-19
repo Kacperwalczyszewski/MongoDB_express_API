@@ -31,8 +31,6 @@ router.get('/', ProductController.getAllProducts);
  *              type: string
  *            price:
  *              type: number
- *            date:
- *              type: Date
  *     responses:
  *       201:
  *         description: Created
