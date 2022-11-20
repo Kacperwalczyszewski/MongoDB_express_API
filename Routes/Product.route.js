@@ -12,7 +12,7 @@ const router = express.Router();
  *       200:
  *         description: Returns all the products
  *       500:
- *         description: Error: Internal Server Error
+ *         description: Internal Server Error
  */
 
 router.get('/', ProductController.getAllProducts);
@@ -39,7 +39,7 @@ router.get('/', ProductController.getAllProducts);
  *       201:
  *         description: Created
  *       500:
- *         description: Error: Internal Server Error
+ *         description: Internal Server Error
  */
 router.post('/', ProductController.createNewProduct);
 /**
@@ -61,7 +61,7 @@ router.post('/', ProductController.createNewProduct);
  *       404:
  *         description: Item not found
  *       500:
- *         description: Error: Internal Server Error
+ *         description: Internal Server Error
  */
 router.get('/:id', ProductController.findProductById);
 /**
@@ -92,11 +92,11 @@ router.get('/:id', ProductController.findProductById);
  *       201:
  *         description: Product updated
  *       400:
- *         description: Error: Bad Request
+ *         description: Bad Request
  *       404:
- *         description: Error: Not Found
+ *         description: Not Found
  *       500:
- *         description: Error: Internal Server Error
+ *         description: Internal Server Error
  */
 router.patch('/:id', ProductController.updateProduct);
 /**
@@ -114,11 +114,11 @@ router.patch('/:id', ProductController.updateProduct);
  *       200:
  *         description: Product deleted 
  *       400:
- *         description: Error: Bad Request
+ *         description: Bad Request
  *       404:
- *         description: Error: Not Found
+ *         description: Not Found
  *       500:
- *         description: Error: Internal Server Error
+ *         description: Internal Server Error
  */
 router.delete('/:id', ProductController.deleteProduct);
 
